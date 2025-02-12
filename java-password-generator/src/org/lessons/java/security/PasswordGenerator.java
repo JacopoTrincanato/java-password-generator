@@ -61,5 +61,8 @@ public class PasswordGenerator {
         System.out
                 .println("La tua password è " + nome + "-" + cognome + "-" + colorePreferito + "-" + sommaDataNascita);
 
+        // chiudo lo scanner
+        in.close();
+
     }
 }
