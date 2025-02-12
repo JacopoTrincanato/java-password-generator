@@ -24,6 +24,7 @@ public class PasswordGenerator {
         // creo una variabile per l'anno di nascita
         int annoDiNascita;
 
+        // creo una variabile per lo scanner
         Scanner in = new Scanner(System.in);
 
         // creo l'input per il nome dell'utente
