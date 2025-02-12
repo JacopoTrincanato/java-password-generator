@@ -7,16 +7,22 @@ public class PasswordGenerator {
     public static void main(String[] args) throws Exception {
 
         // creo una variabile per il nome
-        String nome = "";
+        String nome;
 
         // creo una variabile per il cognome
-        String cognome = "";
+        String cognome;
 
         // creo una variabile per il colore preferito
-        String colorePreferito = "";
+        String colorePreferito;
 
-        // creo una variabile per la data di nascita
-        int dataNascita;
+        // creo una variabile per il giorno di nascita
+        int giornoDiNascita;
+
+        // creo una variabile per il mese di nascita
+        int meseDiNascita;
+
+        // creo una variabile per l'anno di nascita
+        int annoDiNascita;
 
         Scanner in = new Scanner(System.in);
 
@@ -32,13 +38,28 @@ public class PasswordGenerator {
         System.out.println("Qual è il tuo colore preferito?");
         colorePreferito = in.nextLine();
 
-        // creo l'input per la data di nascita dell'utente
-        System.out.println("Qual è la tua data di nascita?");
-        dataNascita = in.nextInt();
+        // creo l'input per il giorno di nascita dell'utente
+        System.out.println("Qual è il giorno in cui sei nato?");
+        giornoDiNascita = in.nextInt();
         in.nextLine();
 
+        // creo l'input per il mese di nascita dell'utente
+        System.out.println("Qual è il mese in cui sei nato?");
+        meseDiNascita = in.nextInt();
+        in.nextLine();
+
+        // creo l'input per l'anno di nascita dell'utente
+        System.out.println("Qual è l'anno in cui sei nato'?");
+        annoDiNascita = in.nextInt();
+        in.nextLine();
+
+        // creo una variabile per la data di nascita dove sommo i valori di giorno, mese
+        // e anno
+        int sommaDataNascita = giornoDiNascita + meseDiNascita + annoDiNascita;
+
         // stampo a schermo la password
-        System.out.println("La tua pa");
+        System.out
+                .println("La tua password è " + nome + "-" + cognome + "-" + colorePreferito + "-" + sommaDataNascita);
 
     }
 }
